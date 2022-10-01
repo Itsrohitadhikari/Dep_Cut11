@@ -8,12 +8,12 @@
 var a = document.getElementById("Amt_p").value;
 var b = document.getElementById("per").value;
 var c = document.getElementById("yer").value;
-var cc = document.getElementByID("mth").value;
+//var cc = document.getElementByID("mth").value;
 var a = parseInt(a);
 var b = parseInt(b);
 var c = parseInt(c);
-var cc = parseInt(cc);
-var cc = cc/12;
+//var cc = parseInt(cc);
+//var cc = cc/12;
 var d = a * b;
 
 var e = parseInt(d)/100;
@@ -24,7 +24,7 @@ var f = parseInt(e);
 
 
 document.getElementById("Nepal").innerHTML += "<table border=1 width=100%><tr>";
-for(var i=0;i<cc;i++){
+for(var i=0;i<c;i++){
 
 var j = a - e;
 a = a - e; 
