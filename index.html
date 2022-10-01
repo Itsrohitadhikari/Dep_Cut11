@@ -8,17 +8,19 @@
 var a = document.getElementById("Amt_p").value;
 var b = document.getElementById("per").value;
 var c = document.getElementById("yer").value;
-//var cc = document.getElementByID("mth").value;
+var cc = document.getElementByID("mth").value;
 var a = parseInt(a);
 var b = parseInt(b);
 var c = parseInt(c);
-//var cc = parseInt(cc);
-//var cc = cc/12;
+var cc = parseInt(cc);
 var d = a * b;
 
 var e = parseInt(d)/100;
 e = parseInt(e);
 document.getElementById("msg").innerText = "Dep Per Year Is : "+ e +" We're Cutting It Per Year ";
+var tpk = e/12;
+tpk = parseInt(e);
+document.getElementById("msg").innerText = "Dep Per Year Is : "+ tpk +" We're Cutting It Per Year ";
 
 var f = parseInt(e);
 
@@ -31,6 +33,22 @@ a = a - e;
 console.log(j);
 document.getElementById("Nepal").innerHTML += "<td align=center>" + a + "</td> </br>";
 
+}
+
+
+
+if(cc===undefined) {
+cc=0;
+}
+
+for (var i=0; i=1;i++){
+
+for (var i=0;i<cc;i++){
+tpk = tpk+tpk;
+console.log(tpk);
+}
+a = a - tpk;
+document.getElementById("Nepal").innerHTML += "<td align=center>" + a + "</td> </br>";
 }
 
 
