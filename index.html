@@ -8,18 +8,18 @@
 var a = document.getElementById("Amt_p").value;
 var b = document.getElementById("per").value;
 var c = document.getElementById("yer").value;
-var cc = document.getElementByID("mth").value;
+var t = document.getElementByID("month").value;
 var a = parseInt(a);
 var b = parseInt(b);
 var c = parseInt(c);
-var cc = parseInt(cc);
+var t = parseInt(t);
 var d = a * b;
 
 var e = parseInt(d)/100;
 e = parseInt(e);
 document.getElementById("msg").innerText = "Dep Per Year Is : "+ e +" We're Cutting It Per Year ";
 var tpk = e/12;
-tpk = parseInt(e);
+tpk = parseInt(tpk);
 document.getElementById("msg").innerText = "Dep Per Year Is : "+ tpk +" We're Cutting It Per Year ";
 
 var f = parseInt(e);
@@ -37,8 +37,8 @@ document.getElementById("Nepal").innerHTML += "<td align=center>" + a + "</td> <
 
 
 
-if(cc===undefined) {
-cc=0;
+if(t===undefined) {
+t=0;
 }
 
 for (var i=0; i=1;i++){
@@ -79,8 +79,8 @@ padding: 98px;
 <input type="text" id="per"><br>
 <strong>Years Used:</strong><br>
 <input type="text" id="yer" color="white"><br><br>
-<strong> Months Used: </strong><br>
-<input type="text" id="mth" color="white"><br><br>
+<strong>Months Used:</strong><br>
+<input type="text" id="month" color="white"><br><br>
 <input type="submit" value="calculate" id="ca" onclick="dep()"><br>
 <div id="msg"></div>
 <div id="Nepal">
