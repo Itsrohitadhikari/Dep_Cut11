@@ -4,7 +4,7 @@
 <title>DEPRICIATION Calculator...</title>
 <meta name="keyboard" description="Based On NEB 11's Dep">
 <script type="text/javascript">
- function dep(){
+function dep(){
 var a = document.getElementById("Amt_p").value;
 var b = document.getElementById("per").value;
 var c = document.getElementById("yer").value;
@@ -18,7 +18,7 @@ var d = a * b;
 var e = parseInt(d)/100;
 e = parseInt(e);
 document.getElementById("msg").innerText = "Dep Per Year Is : "+ e +" We're Cutting It Per Year ";
-float tpk = e/12;
+var tpk = e/12;
 tpk = parseFlaot(tpk);
 document.getElementById("msg").innerText = "Dep Per Year Is : "+ tpk +" We're Cutting It Per Year ";
 
@@ -80,7 +80,7 @@ padding: 98px;
 <strong>Years Used:</strong><br>
 <input type="text" id="yer" color="white"><br><br>
 <strong>Months Used:</strong><br>
-//<input type="text" id="month" color="white"><br><br>
+<!-- <input type="text" id="month" color="white"><br><br> -->
 <input type="submit" value="calculate" id="ca" onclick="dep()"><br>
 <div id="msg"></div>
 <div id="Nepal">
