@@ -21,13 +21,13 @@ document.getElementById("msg").innerText = "Dep Per Year Is : "+ e +" We're Cutt
 var f = parseInt(e);
 
 
-document.getElementById("Nepal").innerHTML += "<table border=1 width=100%><tr>";
+document.getElementById("np").innerHTML += "<tr border=1 width=100%><tr>";
 for(var i=0;i<c;i++){
 
 var j = a - e;
 a = a - e; 
 console.log(j);
-document.getElementById("Nepal").innerHTML += "<td align=center>" + a + "</td> </br>";
+document.getElementById("np").innerHTML += "<td align=center>" + a + "</td> </br>";
 
 }
 
@@ -62,7 +62,9 @@ padding: 98px;
 <input type="submit" value="calculate" id="ca" onclick="dep()"><br>
 <div id="msg"></div>
 <div id="Nepal">
+<table id="np">
 
+</table>
 <!---Coding Garnu Ramro Kura Ho Re Ni Tw Aruko Code Chornu Bhanda Bujera Aafule Garnu Ramro Kura Ho Ren Ta Tarabazi Lai Lai Mama Aaye Ghoda --->
 </div>
 </div>
